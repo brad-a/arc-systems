@@ -1,5 +1,6 @@
 #!/bin/bash
 # This script will download rpms and append the extend-compute.xml file on rocks.
+# This requires that <!-- package-script --> is added to the <package> section of extend-compute
 cp /export/rocks/install/site-profiles/6.1.1/nodes/extend-compute.xml /root/extend-compute/extend-compute.xml.bak
 echo -n "Enter the name of the package to add: "
 read package
